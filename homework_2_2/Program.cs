@@ -6,6 +6,9 @@ if (N / 100 == 0)
 }
 else
 {
-    string str = Convert.ToString(N);
-    Console.WriteLine("Третья цифра числа: " + str[2]);
+    while(N > 1000)
+    {
+        N = N / 10;
+    }
+    Console.WriteLine("Третья цифра числа: " + N % 10);
 }
